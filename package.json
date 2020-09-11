@@ -1,0 +1,28 @@
+{
+  "name": "database_shop_backend",
+  "version": "1.0.0",
+  "description": "database at kea shop backend",
+  "main": "index.ts",
+  "author": "groupe 6",
+  "license": "mit",
+  "private": true,
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "nodemon ./app.ts",
+    "build": "tsc -b ."
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^13.13.5",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  }
+}
