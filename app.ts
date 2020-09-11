@@ -5,7 +5,7 @@ import cors from "cors";
 import RootEndpoint from "./src/services/RootEndpoint";
 
 const app: Application = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 
 // parse json data in body
 app.use(bodyParser.json());
