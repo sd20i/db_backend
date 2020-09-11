@@ -1,6 +1,6 @@
 ## Backend service for database course.  
 
-#### installation.  
+### installation.
 close the repo.  
 
 ### App info.
@@ -9,4 +9,4 @@ to run the application in development mode, use the ``$ yarn run dev `` script
 For production, first build the Typescript with ``$ yarn run build ``  
 
 ### run with docker!  
-``$ docker-compose up``  
+``$ docker-compose up``
