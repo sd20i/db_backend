@@ -10,7 +10,7 @@ Install dependencies.
 Run application in development mode, will provide nodemon for continues recompile.  
 ``$ yarn run dev``  
 
-Build application
+Build application.  
 ``$ yarn run build``  
 
 ### run with docker!  
