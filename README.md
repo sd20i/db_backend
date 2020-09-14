@@ -13,7 +13,8 @@ Run application in development mode, will provide nodemon for continues recompil
 Build application.  
 ``$ yarn run build``  
 
-### run with docker!.  
+### Docker.  
+run with docker.  
 ``$ docker-compose up``  
 
 ### App info.
