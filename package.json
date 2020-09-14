@@ -9,7 +9,9 @@
   "scripts": {
     "start": "node dist/app.js",
     "dev": "nodemon ./app.ts",
-    "build": "tsc -b ."
+    "build": "tsc -b .",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "clean": "ets clean"
   },
   "dependencies": {
     "@types/cors": "^2.8.6",

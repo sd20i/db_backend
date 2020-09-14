@@ -7,6 +7,7 @@ import RootEndpoint from "./src/services/RootEndpoint";
 const app: Application = express();
 const PORT = process.env.PORT || 5000;
 
+console.log(process.env);
 // parse json data in body
 app.use(bodyParser.json());
 app.use(
