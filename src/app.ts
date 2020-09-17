@@ -2,12 +2,11 @@ import express, { Application } from "express";
 import bodyParser from "body-parser";
 import "dotenv/config";
 import cors from "cors";
-import RootEndpoint from "./src/services/RootEndpoint";
+import RootEndpoint from "./services/RootEndpoint";
 
 const app: Application = express();
 const PORT = process.env.PORT || 5000;
 
-console.log(process.env);
 // parse json data in body
 app.use(bodyParser.json());
 app.use(
@@ -37,3 +36,5 @@ app.listen(PORT, () => {
 
 // connecting endpoints to root, app has to be passed to access the express framework
 RootEndpoint(app);
+
+export default app;
