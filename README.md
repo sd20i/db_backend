@@ -22,3 +22,5 @@ Application is written in Node js with express and uses the typescript subset.
 to run the application in development mode, use the ``$ yarn run dev `` script  
 For production, first build the Typescript with ``$ yarn run build ``  
 
+
+[![Build Status](https://travis-ci.org/sd20i/db_backend.svg?branch=master)](https://travis-ci.org/sd20i/db_backend)
