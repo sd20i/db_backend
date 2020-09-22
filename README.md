@@ -25,7 +25,7 @@ Application is written in Node js with express and uses the typescript subset.
 to run the application in development mode, use the `$ yarn run dev` script  
 For production, first build the Typescript with `$ yarn run build`
 
-### Travis CI pipeline
+### Travis CI pipeline.
 
 Travis will run all tests before accepting a pull request to be merged.
 
