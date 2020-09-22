@@ -10,4 +10,6 @@ RUN npm run build
 
 COPY . .
 
+RUN npm test
+
 CMD [ "npm", "start" ]
