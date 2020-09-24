@@ -7,4 +7,4 @@ const RootEndpoint = (app: Application) => {
   });
 };
 
-export { RootEndpoint, TestingEndpoint };
+export { RootEndpoint };
