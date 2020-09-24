@@ -7,10 +7,4 @@ const RootEndpoint = (app: Application) => {
   });
 };
 
-const TestingEndpoint = (app: Application) => {
-  app.get("/", (_req: Request, res: Response) => {
-    res.send("hello");
-  });
-};
-
-export { RootEndpoint, TestingEndpoint };
+export { RootEndpoint };
