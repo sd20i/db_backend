@@ -34,7 +34,7 @@ app.listen(PORT, () => {
   console.log("Server running on port ", PORT);
 });
 
-// connecting endpoints to root, app has to be passed to access the express framework
+// connecting endpoints to root, app has to be passed to access express
 RootEndpoint(app);
 
 export default app;

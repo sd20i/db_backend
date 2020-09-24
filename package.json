@@ -14,7 +14,7 @@
     "tsc": "ets && tsc -p tsconfig.json",
     "clean": "ets clean",
     "test":
-      "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'"
+      "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts' --exit"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
