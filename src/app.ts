@@ -6,9 +6,9 @@ import { RootEndpoint } from "./services/RootEndpoint";
 import {
   CarBodiesEndpoint,
   CarTiresEndpoint,
-  WindowTypesEndpoint
+  WindowTypesEndpoint,
 } from "./services/GetCarPartsEndpoint";
-
+import { PostOrderCarEndpoint } from "./services/PostOrderCar";
 const app: Application = express();
 const PORT = process.env.PORT || 5000;
 
@@ -16,12 +16,12 @@ const PORT = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
-    extended: true
+    extended: true,
   })
 );
 
 // use res req types, set cors headers
-app.use("*", function(
+app.use("*", function (
   _req: express.Request,
   res: express.Response,
   next: Function
@@ -44,5 +44,6 @@ RootEndpoint(app);
 CarBodiesEndpoint(app);
 CarTiresEndpoint(app);
 WindowTypesEndpoint(app);
+PostOrderCarEndpoint(app);
 
 export default app;

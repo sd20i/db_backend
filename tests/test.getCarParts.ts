@@ -7,11 +7,11 @@ import server from "../src/app";
 chai.use(chaiHttp);
 
 // get getting car bodies
-describe("/GET /getBodies", () => {
-  it("should return an array of car bodies", done => {
+describe("/GET /getCarBodies", () => {
+  it("should return an array of car bodies", (done) => {
     chai
       .request(server)
-      .get("/getBodies")
+      .get("/getCarBodies")
       .set("Accept", "application/json; charset=utf-8")
       .end((_err, res) => {
         expect(res.body.bodies).to.be.an("array");
@@ -22,7 +22,7 @@ describe("/GET /getBodies", () => {
 
 // test getting car tires
 describe("/GET /getTires", () => {
-  it("should return an array of car tires", done => {
+  it("should return an array of car tires", (done) => {
     chai
       .request(server)
       .get("/getTires")
@@ -36,7 +36,7 @@ describe("/GET /getTires", () => {
 
 // test getting window types
 describe("/GET /getWindowTypes", () => {
-  it("should return an array of window types", done => {
+  it("should return an array of window types", (done) => {
     chai
       .request(server)
       .get("/getWindowTypes")
