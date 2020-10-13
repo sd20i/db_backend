@@ -21,7 +21,7 @@ describe("/GET /getCarBodies", () => {
 });
 
 // test getting car tires
-/*describe("/GET /getTires", () => {
+describe("/GET /getTires", () => {
   it("should return an array of car tires", (done) => {
     chai
       .request(server)
@@ -32,10 +32,10 @@ describe("/GET /getCarBodies", () => {
         done();
       });
   });
-});*/
+});
 
 // test getting window types
-/*describe("/GET /getWindowTypes", () => {
+describe("/GET /getWindowTypes", () => {
   it("should return an array of window types", (done) => {
     chai
       .request(server)
@@ -46,4 +46,4 @@ describe("/GET /getCarBodies", () => {
         done();
       });
   });
-});*/
+});
