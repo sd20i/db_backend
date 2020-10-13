@@ -1,12 +1,8 @@
 import { Request, Response, Application } from "express";
 
-/* endpoints for getting all car parts
-
-*/
-
 // Get array of car bodies
 const CarBodiesEndpoint = (app: Application) => {
-  app.get("/getBodies", (_req: Request, res: Response) => {
+  app.get("/getCarBodies", (_req: Request, res: Response) => {
     res.status(200).json({ bodies: [] });
   });
 };
@@ -25,4 +21,4 @@ const WindowTypesEndpoint = (app: Application) => {
   });
 };
 
-export { CarBodiesEndpoint, CarTiresEndpoint, WindowTypesEndpoint };
+export { CarBodiesEndpoint, CarTiresEndpoint, WindowTypesEndpoint }; // CarTiresEndpoint, WindowTypesEndpoint
