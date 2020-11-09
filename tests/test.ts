@@ -7,7 +7,7 @@ import server from "../src/app";
 chai.use(chaiHttp);
 
 describe("/GET /", () => {
-  it("should get root endpoint", done => {
+  it("should get root endpoint", (done) => {
     chai
       .request(server)
       .get("/")
