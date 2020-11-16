@@ -31,4 +31,4 @@ Manufacturers.init(
   }
 );
 
-export default Manufacturers;
+export { Manufacturers };
